@@ -52,3 +52,19 @@ b2 = torch.randn((1, n_output))
 h = activation(torch.mm(features, w1) + b1)
 saida = activation(torch.mm(h, w2) + b2)
 print(saida)
+
+"""Usando Numpy"""
+
+import numpy as np
+
+a = np.random.rand(6,2)
+print(a)
+
+b = torch.from_numpy(a)
+print(b)
+
+print(b.numpy())
+
+print(b.mul_(2))
+
+print(a)
